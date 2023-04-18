@@ -14,3 +14,9 @@ def cadastrar(request):
         form = ProdutoForm()
 
     return render(request, template_name, {"form":form})
+
+def listar(request):
+    template_name = "estoque/mostrar_produto.html"
+    produtos = Produto.objects.all()
+    context = {'produtos': produtos}
+    return render(request, template_name, context)
