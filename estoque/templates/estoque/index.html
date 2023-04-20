@@ -1,14 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Produtos</title>
 </head>
 <body>
-    <div>
-        <table>
+    <div class="container">
+        <table border="1">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -26,11 +28,14 @@
                     <td>{{produto.preco}}</td>
                     <td>{{produto.descricao}}</td>
                     <td>{{produto.quantidade}}</td>
+                    <th><a href="{% url 'excluir' pk=produto.pk %}" class="enfeite">Remover</a></th>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
-    <a href="{% url 'cadastrar_produto.html' %}"><button type="button">Novo Produto</button></a>
+    <div class="container" id="teste">
+        <a href="{% url 'cadastrar_produto.html' %}"><button type="button" class="botao">Novo Produto</button></a>
+    </div>
 </body>
 </html>

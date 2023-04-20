@@ -1,0 +1,43 @@
+td {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+form{
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select{
+    display: block;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.botao {
+    margin-top: 5px;
+    border-radius: 3px;
+    border-width: 1px;
+    background-color: white;
+    text-align: center;
+}
+
+.enfeite {
+    text-decoration: none;
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+#teste {
+    padding-right: 350px;
+}

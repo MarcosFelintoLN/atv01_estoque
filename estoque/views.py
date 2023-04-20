@@ -20,3 +20,8 @@ def listar(request):
     produtos = Produto.objects.all()
     context = {'produtos': produtos}
     return render(request, template_name, context)
+
+def excluir(request, pk):
+    produto_escolhido = Produto.objects.get(pk=pk)
+    produto_escolhido.delete()
+    return redirect('index.html')
