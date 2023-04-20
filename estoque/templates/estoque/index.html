@@ -29,6 +29,7 @@
                     <td>{{produto.descricao}}</td>
                     <td>{{produto.quantidade}}</td>
                     <th><a href="{% url 'excluir' pk=produto.pk %}" class="enfeite">Remover</a></th>
+                    <td><a href="{% url 'editar' pk=produto.pk %}" class="enfeite">Editar</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

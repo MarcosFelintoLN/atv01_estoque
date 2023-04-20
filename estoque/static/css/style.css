@@ -28,16 +28,11 @@ input, select{
     text-align: center;
 }
 
-.enfeite {
-    text-decoration: none;
-    color: red;
-}
-
 .container {
     display: flex;
     justify-content:center;
 }
 
 #teste {
-    padding-right: 350px;
+    padding-right: 365px;
 }
