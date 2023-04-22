@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 td {
     text-align: center;
 }
@@ -20,19 +24,27 @@ input, select{
     height: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
+#del {
+    color: red;
+}
+
+#edt {
+    color: black;
+}
+
 .botao {
     margin-top: 5px;
     border-radius: 3px;
     border-width: 1px;
     background-color: white;
-    text-align: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     justify-content:center;
-}
-
-#teste {
-    padding-right: 365px;
 }

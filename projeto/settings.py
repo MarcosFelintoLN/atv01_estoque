@@ -107,7 +107,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    'estoque/css/'
+    BASE_DIR / 'estoque/static/css'
 ]
 
 # Default primary key field type
